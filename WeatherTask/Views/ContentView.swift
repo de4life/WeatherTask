@@ -16,6 +16,7 @@ struct ContentView: View {
         VStack {
             if let location = locationManager.location {
                 if let weather = weather {
+                    WeatherView(weather: weather)
                     Text("Weather data!")
                     
                 } else {
